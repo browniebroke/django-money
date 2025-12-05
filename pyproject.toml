@@ -84,11 +84,11 @@ django52 = [
     "django-reversion>=4.0.0",
     "djangorestframework>=3.13.0",
 ]
-djangomain = [
-    "django @ https://github.com/django/django/archive/main.zip ; python_version>='3.12'",
-    "django-reversion>=4.0.0",
-    "djangorestframework>=3.13.0",
-]
+#djangomain = [
+#    "django @ https://github.com/django/django/archive/main.zip ; python_version>='3.12'",
+#    "django-reversion>=4.0.0",
+#    "djangorestframework>=3.13.0",
+#]
 
 [tool.uv]
 conflicts = [
@@ -98,7 +98,7 @@ conflicts = [
     { group = "django50" },
     { group = "django51" },
     { group = "django52" },
-    { group = "djangomain" },
+#    { group = "djangomain" },
   ],
 ]
 
