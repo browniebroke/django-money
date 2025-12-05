@@ -60,6 +60,47 @@ docs = [
     "Sphinx>=6,<7",
     "sphinx_rtd_theme>=1.2,<1.3",
 ]
+nodrf = [
+    "Django>=4.2,<5.0",
+    "django-reversion>=4.0.0",
+]
+django42 = [
+    "Django>=4.2,<5.0",
+    "django-reversion>=4.0.0",
+    "djangorestframework>=3.13.0",
+]
+django50 = [
+    "Django>=5.0,<5.1",
+    "django-reversion>=4.0.0",
+    "djangorestframework>=3.13.0",
+]
+django51 = [
+    "Django>=5.1,<5.2",
+    "django-reversion>=4.0.0",
+    "djangorestframework>=3.13.0",
+]
+django52 = [
+    "Django>=5.2,<6.0",
+    "django-reversion>=4.0.0",
+    "djangorestframework>=3.13.0",
+]
+djangomain = [
+    "django @ https://github.com/django/django/archive/main.zip ; python_version>='3.12'",
+    "django-reversion>=4.0.0",
+    "djangorestframework>=3.13.0",
+]
+
+[tool.uv]
+conflicts = [
+  [
+    { group = "nodrf" },
+    { group = "django42" },
+    { group = "django50" },
+    { group = "django51" },
+    { group = "django52" },
+    { group = "djangomain" },
+  ],
+]
 
 [project.urls]
 Homepage = "https://github.com/django-money/django-money"
