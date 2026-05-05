@@ -7,6 +7,7 @@ Unreleased
 
 **Changed**
 
+- Upsert rates instead of deleting and recreating them :github-issue:`818` (:github-user:`2tunnels`)
 - Update README to reflect currently supported Python (3.10–3.13) and Django (4.2–5.2) versions. :github-issue:`820` (:github-user:`smhtbtb`)
 
 
